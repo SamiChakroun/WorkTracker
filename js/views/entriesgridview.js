@@ -1,7 +1,7 @@
 define(['backbone',
 		'underscore',
 		'jquery',
-		'entrylist',
+		'entrieslist',
         'entryview',
         'entrycreateview',
         'text!templates/entrygridtemplate.html'],
