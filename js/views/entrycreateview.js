@@ -3,7 +3,7 @@ define(['backbone',
         'jquery',
         'entry',
         'entrieslist',
-        'text!templates/addentrytemplate.html'], 
+        'text!templates/addentrytemplate.html'],
 function(Backbone, _, $, Entry, userList, UserCreateTemplate) {
 
 	var UserCreateView = Backbone.View.extend({
