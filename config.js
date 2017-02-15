@@ -10,7 +10,7 @@ requirejs.config({
       // model
       entry: 'js/models/entry',
       // collection
-      entrieslist: 'js/collections/entrieslist',
+      entrieslist: 'js/collections/entrylist',
       // views
       entrycreateview: 'js/views/entrycreateview',
       entryview: 'js/views/entryview',

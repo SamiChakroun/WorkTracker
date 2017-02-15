@@ -12,31 +12,49 @@
 					<div class="row">
 						<div class="form-group col-lg-6 col-md-6 col-sm-8 col-xs-12">
 							<label>From</label>
-							<input type="text" id="from" class="form-control" name="from" placeholder="first name">
+							<!-- <div class="well">
+							  <div id="datetimepicker1" class="input-append date">
+							    <input data-format="dd/MM/yyyy hh:mm:ss" type="text"></input>
+							    <span class="add-on">
+							      <i data-time-icon="icon-time" data-date-icon="icon-calendar">
+							      </i>
+							    </span>
+							  </div>
+							</div>
+							<script type="text/javascript">
+							  $(function() {
+							    $('#datetimepicker1').datetimepicker({
+							      language: 'pt-BR'
+							    });
+							  });
+							</script> -->
+							<input type="text" id="from" class="form-control" name="from" id='datetimepicker4'>
 						</div>
 						<div class="form-group col-lg-6 col-md-6 col-sm-8 col-xs-12">
 							<label>To</label>
-							<input type="text" id="to" class="form-control" name="to" placeholder="last name">
+							<input type="text" id="to" class="form-control" name="to" id='datetimepicker4'>
 						</div>
 					</div>
 					<div class="row">
 						<div class="form-group col-lg-6 col-md-6 col-sm-8 col-xs-12">
 							<label>Task Description</label>
-							<input type="text" id="description" class="form-control" name="description" placeholder="description">
+							<input type="text" id="description" class="form-control" name="description">
 						</div>
 						<div class="form-group col-lg-6 col-md-6 col-sm-8 col-xs-12">
 							<label>Number of hours</label>
-							<input type="text" id="hours" class="form-control" name="hours" placeholder="job description">
+							<input type="text" id="hours" class="form-control" name="hours">
 						</div>
 					</div>
 					
 					
 					<div class="row">
-						<div class="radio">
-							<label> <input type="radio" name="optionsRadios" id="optionsRadios1" value="paid"> Paid </label>
-						</div>
-						<div class="radio">
-							<label> <input type="radio" name="optionsRadios" id="optionsRadios2" value="notpaid"> Not Paid </label>
+						<div class="form-group col-lg-6 col-md-6 col-sm-8 col-xs-12">
+							<div class="radio">
+								<label> <input type="radio" name="optionsRadios" id="optionsRadios1" value="paid"> Paid </label>
+							</div>
+							<div class="radio">
+								<label> <input type="radio" name="optionsRadios" id="optionsRadios2" value="notpaid"> Not Paid </label>
+							</div>
 						</div>
 					</div>
 				</form>	
@@ -49,11 +67,6 @@
 		</div>
 	</div>	
 </div>
-
-
-
-
-
 
 
 

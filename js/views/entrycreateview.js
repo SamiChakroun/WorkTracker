@@ -3,8 +3,8 @@ define(['backbone',
         'jquery',
         'entry',
         'entrieslist',
-        'text!templates/entrycreateview.html'], 
-function(Backbone, _, $, User, userList, UserCreateTemplate) {
+        'text!templates/addentrytemplate.html'], 
+function(Backbone, _, $, Entry, userList, UserCreateTemplate) {
 
 	var UserCreateView = Backbone.View.extend({
 		events: {'click .submit': 'submit'
@@ -33,12 +33,12 @@ function(Backbone, _, $, User, userList, UserCreateTemplate) {
 			ev.preventDefault();
 			var self = this;
 			if (self.isCreateOrEdit) {
-				var user = new User({ from: $('#from').val() ,
+				var entry = new Entry({ from: $('#from').val() ,
 										to: $('#to').val() ,
 										description: $('#description').val() ,
 										jobdescription: $('#hours').val() });
-				self.collection.add(user);
-				console.log('added user to collection');
+				self.collection.add(entry);
+				console.log('added entry to collection');
 			} else {
 				self.model.attributes.from = $('#from').val();
 				self.model.attributes.to = $('#to').val();
@@ -46,7 +46,6 @@ function(Backbone, _, $, User, userList, UserCreateTemplate) {
 				self.model.attributes.jobdescription = $('#hours').val();
 				self.model.trigger('change', self.model);
 				}
-				//return false; // to stay on the same page
 			},
 	});
 
