@@ -34,8 +34,6 @@ function(Backbone, _, $, EntriesCollection, EntryView, EntryCreateView, MainTemp
 						var self = this;
 						self.$el.html(self.template);
 
-					
-						
 						_.each(self.collection.toArray(), function(entry, i) {
 							$('#grid tbody').append((new EntryView({model: entry})).render().$el);
 						});
