@@ -2,9 +2,11 @@
 <!-- Jumbotron for intro --> 
 <div class="jumbotron" id="add-container">
   
-  <h1>Work Tracker app!</h1>
+  <h1>WorkTracker App V1.0</h1>
   
   <p>Designed with <i class="fa fa-heart"></i> by Sami Chakroun.</p>
+
+  <p>The app will soon feature some visualizations and a complete backend to make data persist.</p>
   
   <p><button id="add-entry" class="btn btn-primary" data-toggle="modal" data-target="#addUserModal"> Add New Entry </button></p>
   
@@ -15,22 +17,26 @@
 <!-- The actual app --> 
 <div id="list-container">
 	
-	<div class="panel panel-default">
-		<div class="panel-header">
-			<h1 class="text-center"> Work Summary </h1>
-		</div>
+	<div class="page-header">
+		<h1 class="text-center"> Work Summary </h1>
 	</div>
 
 	<div id="list">
 		<table id="grid" class="table table-hover table-responsive">
-			<tr class="active">
-				<th>From</th>
-			    <th>To</th>
-			    <th>Task Description</th>
-			    <th>Number of hours</th>
-			    <th>Paid</th>
-			    <th>&nbsp;</th>
-			</tr>
+
+			<thead>
+				<tr class="active">
+					<th>From</th>
+				    <th>To</th>
+				    <th>Task Description</th>
+				    <th>Number of hours</th>
+				    <th>Paid</th>
+				    <th>&nbsp;</th>
+				</tr>
+			</thead>
+			
+			<tbody>	
+			</tbody>
 		</table>
 	</div>
 

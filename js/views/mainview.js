@@ -5,7 +5,8 @@ define(['backbone',
         'entryview',
         'entrycreateview',
         'text!templates/mainpage.html',
-        'bootstrap'],
+        'bootstrap',
+        'datatables'],
 
 function(Backbone, _, $, EntriesCollection, EntryView, EntryCreateView, MainTemplate) {
 
@@ -32,11 +33,15 @@ function(Backbone, _, $, EntriesCollection, EntryView, EntryCreateView, MainTemp
 					render: function() {
 						var self = this;
 						self.$el.html(self.template);
+
+					
 						
 						_.each(self.collection.toArray(), function(entry, i) {
-							$('#grid').append((new EntryView({model: entry})).render().$el);
+							$('#grid tbody').append((new EntryView({model: entry})).render().$el);
 						});
 						
+						$('#grid').DataTable();
+
 						return self;
 					},
 

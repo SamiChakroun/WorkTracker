@@ -35,6 +35,7 @@ requirejs.config({
       // plugins
       datetimepicker: 'js/plugins/bootstrap-datetimepicker',
       moment: 'js/plugins/moment-with-locales',
+      datatables: ['js/plugins/jquery.dataTables', 'https://cdn.datatables.net/1.10.13/js/jquery.dataTables.min'],
       //chosen: ['js/plugins/chosen.jquery'], 
       text: 'js/plugins/text'
     }
