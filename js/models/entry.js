@@ -1,5 +1,6 @@
 define(['backbone',
         'entry'],
+
 function(Backbone, Entry) {
 
 	var Entry = Backbone.Model.extend({
@@ -9,14 +10,16 @@ function(Backbone, Entry) {
 		   			},
 
 		defaults : function() {
-							return {
-								from: '-',
-								to: '-',
-								description: '-',
-								hours: '-',
-								paid: '-'
-							}
-						}
+									return {
+										datefrom: '-',
+										dateto: '-',
+										description: '-',
+										hours: '-',
+										paid: '-'
+									}
+							  }
 	});
-return Entry;
+
+	return Entry;
+
 });

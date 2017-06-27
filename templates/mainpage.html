@@ -1,16 +1,26 @@
+
+<!-- Jumbotron for intro --> 
 <div class="jumbotron" id="add-container">
+  
   <h1>Work Tracker app!</h1>
-  <p>Made by Sami Chakroun.</p>
-  <p><button id="add" class="btn btn-primary" data-toggle="modal" data-target="#addUserModal"> Add New Entry </button></p>
-  <div id="create-edit-user"></div>
+  
+  <p>Designed with <i class="fa fa-heart"></i> by Sami Chakroun.</p>
+  
+  <p><button id="add-entry" class="btn btn-primary" data-toggle="modal" data-target="#addUserModal"> Add New Entry </button></p>
+  
+  <div id="create-edit-entry"></div>
+
 </div>
 
+<!-- The actual app --> 
 <div id="list-container">
+	
 	<div class="panel panel-default">
 		<div class="panel-header">
 			<h1 class="text-center"> Work Summary </h1>
 		</div>
 	</div>
+
 	<div id="list">
 		<table id="grid" class="table table-hover table-responsive">
 			<tr class="active">
@@ -18,9 +28,10 @@
 			    <th>To</th>
 			    <th>Task Description</th>
 			    <th>Number of hours</th>
-			    <th>Others</th>
+			    <th>Paid</th>
 			    <th>&nbsp;</th>
 			</tr>
 		</table>
 	</div>
+
 </div>
