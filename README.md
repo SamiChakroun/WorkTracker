@@ -1,4 +1,4 @@
-# WorkTracker V1.0
+# WorkTracker V0.3
 
 A small web app that I developed for fun to keep track of my work hours.
 
